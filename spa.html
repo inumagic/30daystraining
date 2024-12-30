@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Day Training Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>30-Day Training Program</h1>
+    </header>
+    <main class="container my-5">
+        <!-- Home Section -->
+        <div id="home-section">
+            <h2 class="pb-3 border-bottom">Training Overview</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="day1.jpg" class="card-img-top" alt="Day 1-10">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Day 1-10</h5>
+                            <button class="range-button btn btn-primary" data-range="1-10">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="day2.jpg" class="card-img-top" alt="Day 11-20">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Day 11-20</h5>
+                            <button class="range-button btn btn-primary" data-range="11-20">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="day3.jpg" class="card-img-top" alt="Day 21-30">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Day 21-30</h5>
+                            <button class="range-button btn btn-primary" data-range="21-30">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Buttons Section -->
+        <div id="daily-buttons-section" class="d-none">
+            <button id="back-to-home" class="btn btn-secondary mb-3">Back to Home</button>
+            <div id="daily-buttons" class="row g-3"></div>
+        </div>
+
+        <!-- Day Content Section -->
+        <div id="day-content-section" class="d-none">
+            <button id="back-to-daily-buttons" class="btn btn-secondary mb-3">Back to Days</button>
+            <div id="day-content"></div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dental Training Program</p>
+    </footer>
+    <script src="spa.js"></script>
+</body>
+</html>

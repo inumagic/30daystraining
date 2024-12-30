@@ -1,0 +1,50 @@
+.card-cover {
+    background-size: cover; /* 背景圖片適配 */
+    background-position: center; /* 背景居中 */
+    height: 400px; /* 默認高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 讓內容向下對齊 */
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 增加文字可讀性 */
+}
+
+button.range-button {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* 按鈕半透明背景 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* 讓按鈕靠左對齊 */
+    font-size: 16px;
+}
+
+button.range-button:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* 按鈕懸停效果 */
+}
+
+@media (max-width: 992px) {
+    .card-cover {
+        height: 300px; /* 平板設備高度減小 */
+    }
+    button.range-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-cover {
+        height: 200px; /* 手機設備高度最小 */
+    }
+    h2 {
+        font-size: 18px; /* 標題字體縮小 */
+    }
+    button.range-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
