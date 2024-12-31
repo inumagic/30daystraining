@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         11:{
             text:"診間相關",
-            youtube:[
+            links:[
             { text: "感染控制保護貼 Part1", url: "https://youtu.be/ETqgEqPsrxo?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
             { text: "感染控制保護貼 Part2", url: "https://youtu.be/WR0dGxT2hWs?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
             { text: "M系列診間吸唾管濾心清潔方式 Part1", url: "https://youtu.be/8ze-3H3vd6s?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
