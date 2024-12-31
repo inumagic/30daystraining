@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "A6.IC單填寫SOP", url: "A6.pdf" },
                 { text: "A9.診所位置平面圖", url: "A9.jpg" },
                 { text: "A12 新進人員sop", url: "A12.pdf" },
-                { text: "A12 新進人員sop", url: "A14.pdf" },
-                { text: "A14.優勢系統ic讀卡機當機", url: "A18.pdf" },
+                { text: "A14.優勢系統ic讀卡機當機", url: "A14.pdf" },
+                { text: "A18 AED使用方式及流程", url: "A18.pdf" },
                 { text: "A24 停水應急SOP", url: "A24.pdf" },
                ],
                   links: [
