@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     
         8:{
-            text:"櫃台SOP",
+            text:"櫃台SOP-收費相關",
             pdfs:[
                 { text: "S4.TA印花收據SOP", url: "S4.pdf" },
                 { text: "S5.重新開立收據", url: "S5.pdf" },
