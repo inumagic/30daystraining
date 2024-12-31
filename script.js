@@ -130,7 +130,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "S14.M5單書寫方式SOP", url: "S14.M5.pdf" },
         ],
         },
-    
+
+         10:{
+            text:"叫貨",
+            pdfs:[
+                { text: "V1.叫貨&收貨SOP", url: "V1.pdf" },
+                { text: "V2.叫貨單範本", url: "V2.pdf" },
+                { text: "V3.庫存SOP", url: "V3.pdf" },
+                { text: "V5. 維修流程&送修流程廠商SOP", url: "V5.pdf" },
+        ],
+        },
        
     } 
    // 顯示特定區段
