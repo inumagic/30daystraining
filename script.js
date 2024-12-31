@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         3:{
             text:"患者Q&A",
             pdfs:[
-                { text: "與患者問與答", url: "與患者問與答_1040121.pdf" },
+                { text: "與患者問與答", url: "ptqa.pdf" },
     
             ],
         },
