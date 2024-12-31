@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             audios: [
                 { title: "禮貌接待", url: "audio1.mp3" }
             ],
-            links: [
-                { text: "A1.診所營業項目及資訊", url: "https://drive.google.com/file/d/1UXV-qBe_xLSPmCZzdOQl_pWCtvEpD7-0/view?usp=drive_link" },
+           pdfs: [
+                { text: "A1.診所營業項目及資訊", url: "A1.診所營業項目及資訊.pdf" },
                 { text: "A2-2.加班申請單", url: "A2-2.加班申請單(範本)1061120修改.pdf" },
                 { text: "A3.電話轉接SOP", url: "A3.電話轉接SOP.pdf" },
                 { text: "A4.客訴發生SOP", url: "A4.客訴發生SOP.pdf" },
@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "A12 新進人員sop", url: "A14.優勢系統ic讀卡機當機.pdf" },
                 { text: "A14.優勢系統ic讀卡機當機", url: "A18 AED使用方式及流程.pdf" },
                 { text: "A24 停水應急SOP", url: "A24 停水應急SOP.pdf" },
+               ],
+                  links: [
                 {text:"教育訓練群組", url:"https://line.me/R/ti/g/Xy_DlB9_SQ"},
                 {text:"X光教育訓練群組", url:"https://line.me/R/ti/g/UrjXAr2nJe"},
     
