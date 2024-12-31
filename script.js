@@ -140,6 +140,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "V5. 維修流程&送修流程廠商SOP", url: "V5.pdf" },
         ],
         },
+
+        11:{
+            text:"診間相關",
+            youtube:[
+            { text: "感染控制保護貼 Part1", url: "https://youtu.be/ETqgEqPsrxo?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "感染控制保護貼 Part2", url: "https://youtu.be/WR0dGxT2hWs?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "M系列診間吸唾管濾心清潔方式 Part1", url: "https://youtu.be/8ze-3H3vd6s?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "M系列診間吸唾管濾心清潔方式 Part2", url: "https://youtu.be/dAgis79gKUw?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "V診間診療椅保養清潔教學 Part1", url: "https://youtu.be/8hFc83l1vII?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "V診間診療椅保養清潔教學 Part2", url: "https://youtu.be/NvYWY7r3lxg?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "V診間診療椅保養清潔教學 Part3", url: "https://youtu.be/6njNwKoYk2M?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "閉診定位", url: "https://youtu.be/dVb93sU5zFg?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "閉診定位及清潔", url: "https://youtu.be/dPzhcp_hC2c?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+            { text: "診間清潔", url: "https://youtu.be/CwA0ggFoKvg?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+
+
+        ]
+     },
        
     } 
    // 顯示特定區段
