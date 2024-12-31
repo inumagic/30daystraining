@@ -98,8 +98,25 @@ document.addEventListener("DOMContentLoaded", function () {
             { text: "A26特殊疾病患者標準SOP", url: "A26.pdf" },
         ],
         },
-    
+
         8:{
+            text:"櫃台SOP",
+            pdfs:[
+                { text: "R1.櫃台注意事項", url: "R1.pdf" },
+                { text: "R2.櫃台每日工作", url: "R2.pdf" },
+                { text: "R3. 掛號流程", url: "R3.pdf" },
+                { text: "R4.櫃台每月申報sop", url: "R4.pdf" },
+                { text: "R7.NP掛號費更改SOP", url: "R7.pdf" },
+                { text: "R9.約診注意事項", url: "R9.pdf" },
+                { text: "R11.櫃台每日工作事項", url: "R11.pdf" },
+                
+
+
+            ],
+
+        },
+        
+        9:{
             text:"櫃台SOP-收費相關",
             pdfs:[
                 { text: "S4.TA印花收據SOP", url: "S4.pdf" },
