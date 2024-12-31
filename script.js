@@ -141,7 +141,15 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
         },
 
-        11:{
+         11:{
+            text:"預設訊息",
+            links:[
+                { text: "預設訊息表網站", url: "https://inumagic.github.io/default-messages/" },
+               
+        ],
+        },
+        
+        12:{
             text:"診間相關",
             links:[
             { text: "感染控制保護貼 Part1", url: "https://youtu.be/ETqgEqPsrxo?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
