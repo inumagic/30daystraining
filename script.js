@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         5:{
             text: "學習NPA",
             pdfs:[
-                { text: "帶P't進診間流程SOP", url: "5.臨床類(MNOP)/M.GP/M1.帶P't進診間流程SOP.pdf" },
+                { text: "帶P't進診間流程SOP", url: "M1.pdf" },
              
                 { text: "A10.拍攝照片影片SOP", url: "A10.pdf" },
                 { text: "P2.矯正口內外照教學", url: "P2part II.pdf" },
