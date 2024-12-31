@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
            pdfs: [
                 { text: "A1.診所營業項目及資訊", url: "A1.pdf" },
-                { text: "A2-2.加班申請單", url: "A2-2.加班申請單(範本)1061120修改.pdf" },
-                { text: "A3.電話轉接SOP", url: "A3.電話轉接SOP.pdf" },
-                { text: "A4.客訴發生SOP", url: "A4.客訴發生SOP.pdf" },
-                { text: "A6.IC單填寫SOP", url: "A6.IC單填寫SOP  113.9.11修改 .pdf" },
-                { text: "A9.診所位置平面圖", url: "A9.診所位置平面圖.jpg" },
-                { text: "A12 新進人員sop", url: "A12 新進人員sop.pdf" },
-                { text: "A12 新進人員sop", url: "A14.優勢系統ic讀卡機當機.pdf" },
-                { text: "A14.優勢系統ic讀卡機當機", url: "A18 AED使用方式及流程.pdf" },
-                { text: "A24 停水應急SOP", url: "A24 停水應急SOP.pdf" },
+                { text: "A2-2.加班申請單", url: "A2-2.pdf" },
+                { text: "A3.電話轉接SOP", url: "A3.pdf" },
+                { text: "A4.客訴發生SOP", url: "A4.pdf" },
+                { text: "A6.IC單填寫SOP", url: "A6.pdf" },
+                { text: "A9.診所位置平面圖", url: "A9.jpg" },
+                { text: "A12 新進人員sop", url: "A12.pdf" },
+                { text: "A12 新進人員sop", url: "A14.pdf" },
+                { text: "A14.優勢系統ic讀卡機當機", url: "A18.pdf" },
+                { text: "A24 停水應急SOP", url: "A24.pdf" },
                ],
                   links: [
                 {text:"教育訓練群組", url:"https://line.me/R/ti/g/Xy_DlB9_SQ"},
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             text: "認識F4表、如何開啟備診語音、如何使用以上工具、學習如何基礎備診。",
             additionalText:"每個診間都有 F4 表，請務必確認並使用。此外，還有語音備診網站，其相關資訊已在「正職」及「兼職」群組的記事本與公告中發布，請隨時參考。進行備診時，請務必打開相關資料，按照網站或表單上的內容逐項檢查並備好，確保準備無誤。",
             pdfs: [
-                { text: "認識F4表", url: "F4表.pdf" },
+                { text: "認識F4表", url: "F4.pdf" },
             ],
             links:[
             {text:"語音備診網站", url:"https://inumagic.github.io/voice-assistant/"}
@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
             pdfs:[
                 { text: "帶P't進診間流程SOP", url: "5.臨床類(MNOP)/M.GP/M1.帶P't進診間流程SOP.pdf" },
              
-                { text: "A10.拍攝照片影片SOP", url: "A10.拍攝照片影片SOP.pdf" },
-                { text: "P2.矯正口內外照教學", url: "P2.矯正口內外照教學 part II.pdf" },
+                { text: "A10.拍攝照片影片SOP", url: "A10.pdf" },
+                { text: "P2.矯正口內外照教學", url: "P2part II.pdf" },
             ],
         },
     
@@ -92,24 +92,24 @@ document.addEventListener("DOMContentLoaded", function () {
         7:{
         text:"IC相關",
         pdfs:[
-            { text: "A6.IC單填寫SOP", url: "A6.IC單填寫SOP  113.9.11修改 .pdf" },
-            { text: "A8-1.健保處置代碼KEY IN SOP", url: "A8-1.健保處置代碼KEY IN SOP (技工不必看!!).pdf" },
-            { text: "A14.優勢系統ic讀卡機當機", url: "A14.優勢系統ic讀卡機當機.pdf" },
-            { text: "A26特殊疾病患者標準SOP", url: "A26特殊疾病患者標準SOP.pdf" },
+            { text: "A6.IC單填寫SOP", url: "A6.pdf" },
+            { text: "A8-1.健保處置代碼KEY IN SOP", url: "A8-1.pdf" },
+            { text: "A14.優勢系統ic讀卡機當機", url: "A14.pdf" },
+            { text: "A26特殊疾病患者標準SOP", url: "A26.pdf" },
         ],
         },
     
         8:{
             text:"櫃台SOP",
             pdfs:[
-                { text: "S4.TA印花收據SOP", url: "櫃台SOP/S4.TA印花收據SOP(更新版 待CK).pdf" },
-                { text: "S5.重新開立收據", url: "櫃台SOP/S5.重新開立收據sop.pdf" },
-                { text: "S6.本票填寫SOP", url: "櫃台SOP/S6.本票填寫SOP.pdf" },
-                { text: "S10-1.日報表寫法SOP", url: "櫃台SOP/S10-1.日報表寫法SOP -112.06.15更新.pdf" },
-                { text: "S11.患者申請X光影像等資料SOP", url: "櫃台SOP/S11.患者申請X光影像等資料SOP(新版).pdf" },
-                { text: "S12.櫃台收款流程SOP", url: "櫃台SOP/S12.櫃台收款流程SOP.pdf" },
-                { text: "S13.重開健保收據SOP", url: "櫃台SOP/S13.重開健保收據SOP(待確認).pdf" },
-                { text: "S14.M5單書寫方式SOP", url: "櫃台SOP/S14.M5單書寫方式SOP -112.06.15更新.pdf" },
+                { text: "S4.TA印花收據SOP", url: "S4.pdf" },
+                { text: "S5.重新開立收據", url: "S5.pdf" },
+                { text: "S6.本票填寫SOP", url: "S6.pdf" },
+                { text: "S10-1.日報表寫法SOP", url: "S10-1.pdf" },
+                { text: "S11.患者申請X光影像等資料SOP", url: "S11.pdf" },
+                { text: "S12.櫃台收款流程SOP", url: "S12.pdf" },
+                { text: "S13.重開健保收據SOP", url: "S13.pdf" },
+                { text: "S14.M5單書寫方式SOP", url: "S14.M5.pdf" },
         ],
         },
     
