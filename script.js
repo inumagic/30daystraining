@@ -169,7 +169,7 @@ function loadDailyImages(range) {
         col.className = "col-12 col-md-4 text-center"; // 居中对齐
 
         const img = document.createElement("img");
-        img.src = `images/day${i}.jpg`; // 指定图片路径
+        img.src = `day${i}.jpg`; // 指定图片路径
         img.alt = `Day ${i}`;
         img.className = "img-fluid cursor-pointer";
         img.addEventListener("click", () => loadDayContent(i));
