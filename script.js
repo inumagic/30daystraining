@@ -109,7 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "R7.NP掛號費更改SOP", url: "R7.pdf" },
                 { text: "R9.約診注意事項", url: "R9.pdf" },
                 { text: "R11.櫃台每日工作事項", url: "R11.pdf" },
-                
+                { text: "U1.健保抽審程序", url: "U1.pdf" },
+
 
 
             ],
