@@ -58,17 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
     
         4:{
             text:"X光教學",
-            videos: [
-                { text: "PANO 教育訓練 - Part 1", url: "Day 1/VID_20240224105526pano1.mp4" },
-                { text: "PANO 教育訓練 - Part 2", url: "Day 1/VID_20240224110716pano2.mp4" },
-                { text: "PANO 教育訓練 - Part 3", url: "Day 1/VID_20240224112219pano3.mp4" },
-                { text: "PANO 教育訓練 - Part 4", url: "Day 1/VID_20240224112502pano4.mp4" },
-                { text: "CT 教育訓練 - Part 1", url: "Day 1/CT1.mp4" },
-                { text: "CT 教育訓練 - Part 2", url: "Day 1/CT2.mp4" },
-                { text: "CT 教育訓練 - Part 3", url: "Day 1/CT3.mp4" },
-                { text: "CT 教育訓練 - Part 4", url: "Day 1/CT4.mp4" },
-                { text: "CT 教育訓練 - Part 5", url: "Day 1/CT5.mp4" },
-                { text: "CT 教育訓練 - Part 6", url: "Day 1/CT6.mp4" },
+            links: [
+             { text: "PANO 教育訓練 - Part 1", url: "https://www.youtube.com/embed/RyP04XuPyUU" },
+                { text: "PANO 教育訓練 - Part 2", url: "https://youtu.be/uZNuzdkY5yo?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "PANO 教育訓練 - Part 3", url: "https://youtu.be/ZiMHNiORs4Y?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "PANO 教育訓練 - Part 4", url: "https://youtu.be/fBY80LJh03s?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "CT 教育訓練 - Part 1", url: "https://youtu.be/MDlweDsDmdw?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "CT 教育訓練 - Part 2", url: "https://youtu.be/PzY77cJ4CG8?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "CT 教育訓練 - Part 3", url: "https://youtu.be/B9VHaejjHvM?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "CT 教育訓練 - Part 4", url: "https://youtu.be/Yw2PRXimFSg?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "CT 教育訓練 - Part 5", url: "https://youtu.be/7YIvLfwIREM?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
+                { text: "CT 教育訓練 - Part 6", url: "https://youtu.be/_BRh_cDRxJI?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
                 { text: "CT 教育訓練 - Part 7", url: "Day 1/CT7.mp4" },
             ],
            
