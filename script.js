@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const homeSection = document.getElementById("home-section");
     const dailyButtonsSection = document.getElementById("daily-buttons-section");
-    const dailyButtons = document.getElementById("daily-buttons");
     const dayContentSection = document.getElementById("day-content-section");
+    const dailyButtons = document.getElementById("daily-buttons");
     const dayContent = document.getElementById("day-content");
 
     // 定義數據
@@ -118,115 +118,181 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     
        
+    } 
+   // 顯示特定區段
+   function showSection(section) {
+    [homeSection, dailyButtonsSection, dayContentSection].forEach(s => s.classList.add("d-none"));
+    section.classList.remove("d-none");
+}
+
+// 加載日數圖片
+function loadDailyImages(range) {
+    const [start, end] = range.split("-").map(Number);
+    dailyButtons.innerHTML = ""; // 清空内容
+
+    for (let i = start; i <= end; i++) {
+        const col = document.createElement("div");
+        col.className = "col-12 col-md-4 text-center"; // 居中对齐
+
+        const img = document.createElement("img");
+        img.src = `images/day${i}.jpg`; // 指定图片路径
+        img.alt = `Day ${i}`;
+        img.className = "img-fluid cursor-pointer";
+        img.addEventListener("click", () => loadDayContent(i));
+
+        const label = document.createElement("p"); // 添加 Day 标注
+        label.textContent = `Day ${i}`;
+        label.className = "mt-2"; // 添加一些间距
+
+        col.appendChild(img);
+        col.appendChild(label); // 把标注加入到图片下面
+        dailyButtons.appendChild(col);
     }
 
-    function showSection(section) {
-        [homeSection, dailyButtonsSection, dayContentSection].forEach(s => s.classList.add("d-none"));
-        section.classList.remove("d-none");
+    showSection(dailyButtonsSection);
+}
+
+
+// 顯示特定區段
+function showSection(section) {
+    [homeSection, dailyButtonsSection, dayContentSection].forEach(s => s.classList.add("d-none"));
+    section.classList.remove("d-none");
+}
+
+// 加載日數圖片
+function loadDailyImages(range) {
+    const [start, end] = range.split("-").map(Number);
+    dailyButtons.innerHTML = ""; // 清空内容
+
+    for (let i = start; i <= end; i++) {
+        const col = document.createElement("div");
+        col.className = "col-12 col-md-4 text-center"; // 居中对齐
+
+        const img = document.createElement("img");
+        img.src = `images/day${i}.jpg`; // 指定图片路径
+        img.alt = `Day ${i}`;
+        img.className = "img-fluid cursor-pointer";
+        img.addEventListener("click", () => loadDayContent(i));
+
+        const label = document.createElement("p"); // 添加 Day 标注
+        label.textContent = `Day ${i}`;
+        label.className = "mt-2"; // 添加一些间距
+
+        col.appendChild(img);
+        col.appendChild(label); // 把标注加入到图片下面
+        dailyButtons.appendChild(col);
     }
 
-    // 加載特定日的內容
-    function loadDayContent(day) {
-        const dayData = daysData[day];
-        if (!dayData) {
-            alert(`Content for Day ${day} is not available yet.`);
-            return;
-        }
+    showSection(dailyButtonsSection);
+}
 
-        dayContent.innerHTML = ""; // 清空之前的內容
+// 加載特定日的內容
+function loadDayContent(day) {
+    dayContent.innerHTML = ""; // 清空之前的內容
 
-        const title = document.createElement("h2");
-        title.textContent = `Day ${day}`;
-        dayContent.appendChild(title);
-
-        if (dayData.text) {
-            const text = document.createElement("p");
-            text.textContent = dayData.text;
-            dayContent.appendChild(text);
-        }
-
-        if (dayData.audios) {
-            const audioSection = createMediaSection("Audio Files", dayData.audios, "audio");
-            dayContent.appendChild(audioSection);
-        }
-
-        if (dayData.pdfs) {
-            const pdfSection = createMediaSection("PDF Resources", dayData.pdfs, "link");
-            dayContent.appendChild(pdfSection);
-        }
-
-        if (dayData.links) {
-            const linksSection = createMediaSection("Related Links", dayData.links, "link");
-            dayContent.appendChild(linksSection);
-        }
-
-        showSection(dayContentSection);
+    const dayData = daysData[day];
+    if (!dayData) {
+        alert(`Content for Day ${day} is not available yet.`);
+        return;
     }
 
-    // 加載日數按鈕
-    function loadDailyButtons(range) {
-        const [start, end] = range.split("-").map(Number);
-        dailyButtons.innerHTML = ""; // 清空按鈕
+    // 添加標題
+    const title = document.createElement("h2");
+    title.textContent = `Day ${day}`;
+    dayContent.appendChild(title);
 
-        for (let i = start; i <= end; i++) {
-            const button = document.createElement("button");
-            button.textContent = `Day ${i}`;
-            button.classList.add("btn", "btn-outline-primary", "m-2");
-            button.addEventListener("click", () => loadDayContent(i));
-            dailyButtons.appendChild(button);
+    // 添加文本內容
+    if (dayData.text) {
+        const text = document.createElement("p");
+        text.textContent = dayData.text;
+        dayContent.appendChild(text);
+    }
+
+    // 添加音頻
+    if (dayData.audios) {
+        const audioSection = createMediaSection("Audio Files", dayData.audios, "audio");
+        dayContent.appendChild(audioSection);
+    }
+
+    // 添加 PDF 連結
+    if (dayData.pdfs) {
+        const pdfSection = createMediaSection("PDF Resources", dayData.pdfs, "link");
+        dayContent.appendChild(pdfSection);
+    }
+
+    // 添加外部連結
+    if (dayData.links) {
+        const linksSection = createMediaSection("Related Links", dayData.links, "link");
+        dayContent.appendChild(linksSection);
+    }
+
+    // 添加視頻
+    if (dayData.videos) {
+        const videoSection = createMediaSection("Video Resources", dayData.videos, "video");
+        dayContent.appendChild(videoSection);
+    }
+
+    showSection(dayContentSection);
+}
+
+// 創建多媒體區段
+function createMediaSection(title, items, type) {
+    const section = document.createElement("div");
+    const header = document.createElement("h3");
+    header.textContent = title;
+    section.appendChild(header);
+
+    items.forEach(item => {
+        if (type === "audio") {
+            const audioElement = document.createElement("audio");
+            audioElement.controls = true;
+            audioElement.src = item.url;
+
+            const audioTitle = document.createElement("p");
+            audioTitle.textContent = item.title;
+            section.appendChild(audioTitle);
+            section.appendChild(audioElement);
+        } else if (type === "link") {
+            const linkElement = document.createElement("a");
+            linkElement.href = item.url;
+            linkElement.textContent = item.text;
+            linkElement.target = "_blank";
+            section.appendChild(linkElement);
+            section.appendChild(document.createElement("br"));
+        } else if (type === "video") {
+            const videoElement = document.createElement("video");
+            videoElement.controls = true;
+            videoElement.src = item.url;
+            videoElement.style.maxWidth = "100%"; // 视频自适应大小
+
+            const videoTitle = document.createElement("p");
+            videoTitle.textContent = item.text;
+            section.appendChild(videoTitle);
+            section.appendChild(videoElement);
         }
-
-        showSection(dailyButtonsSection);
-    }
-
-    // 創建多媒體區段
-    function createMediaSection(title, items, type) {
-        const section = document.createElement("div");
-        const header = document.createElement("h3");
-        header.textContent = title;
-        section.appendChild(header);
-
-        items.forEach(item => {
-            if (type === "audio") {
-                const audioElement = document.createElement("audio");
-                audioElement.controls = true;
-                audioElement.src = item.url;
-
-                const audioTitle = document.createElement("p");
-                audioTitle.textContent = item.title;
-                section.appendChild(audioTitle);
-                section.appendChild(audioElement);
-            } else if (type === "link") {
-                const linkElement = document.createElement("a");
-                linkElement.href = item.url;
-                linkElement.textContent = item.text;
-                linkElement.target = "_blank";
-                section.appendChild(linkElement);
-                section.appendChild(document.createElement("br"));
-            }
-        });
-
-        return section;
-    }
-
-    // 綁定 Explore 按鈕事件
-    document.querySelectorAll(".range-button").forEach(button => {
-        button.addEventListener("click", () => {
-            const range = button.getAttribute("data-range");
-            loadDailyButtons(range);
-        });
     });
 
-    // 返回主頁按鈕
-    document.getElementById("back-to-home").addEventListener("click", () => {
-        showSection(homeSection);
-    });
+    return section;
+}
 
-    // 返回日數按鈕
-    document.getElementById("back-to-daily-buttons").addEventListener("click", () => {
-        showSection(dailyButtonsSection);
+// 綁定主頁按鈕事件
+document.querySelectorAll(".range-button").forEach(button => {
+    button.addEventListener("click", () => {
+        const range = button.getAttribute("data-range");
+        loadDailyImages(range);
     });
+});
 
-    // 初始顯示主頁
+// 返回主頁按鈕
+document.getElementById("back-to-home").addEventListener("click", () => {
     showSection(homeSection);
+});
+
+// 返回日數圖片按鈕
+document.getElementById("back-to-daily-buttons").addEventListener("click", () => {
+    showSection(dailyButtonsSection);
+});
+
+// 初始顯示主頁
+showSection(homeSection);
 });

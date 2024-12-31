@@ -1,3 +1,30 @@
+/* 橫槓樣式 */
+.bg-primary {
+    background-color: #3d0566 !important; /* 使用紫色背景 */
+    color: white; /* 保持文字為白色 */
+}
+
+/* 調整 logo 的樣式 */
+.bg-primary img {
+    height: 40px; /* 設定 logo 高度 */
+    display: block;
+    margin: 0 auto; /* 居中對齊 */
+}
+
+/* 標題文字樣式 */
+.bg-primary h1 {
+    font-size: 1.5rem; /* 標題文字大小 */
+    margin: 10px 0 0; /* 與 logo 保持間距 */
+    text-align: center; /* 文字居中 */
+}
+
+body h1{
+    color: #3d0566;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .card-cover {
     background-size: cover; /* 背景圖片適配 */
     background-position: center; /* 背景居中 */
@@ -47,4 +74,13 @@ button.range-button:hover {
         font-size: 12px;
         padding: 6px 12px;
     }
+}
+
+footer{
+    background-color: #3d0566;
+    text-align: center;
+}
+
+footer p{
+    color: white;
 }
