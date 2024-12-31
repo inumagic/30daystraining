@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { title: "禮貌接待", url: "audio1.mp3" }
             ],
            pdfs: [
-                { text: "A1.診所營業項目及資訊", url: "A1.診所營業項目及資訊.pdf" },
+                { text: "A1.診所營業項目及資訊", url: "https://inumagic.github.io/30daystraining/A1.%E8%A8%BA%E6%89%80%E7%87%9F%E6%A5%AD%E9%A0%85%E7%9B%AE%E5%8F%8A%E8%B3%87%E8%A8%8A.pdf" }
+" },
                 { text: "A2-2.加班申請單", url: "A2-2.加班申請單(範本)1061120修改.pdf" },
                 { text: "A3.電話轉接SOP", url: "A3.電話轉接SOP.pdf" },
                 { text: "A4.客訴發生SOP", url: "A4.客訴發生SOP.pdf" },
