@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
         1: {
             text:"加入相關群組並看公告、學習禮貌接待、診間中與醫師溝通、如何接電話、電話禮儀、環境認識、如何使用印表機",
             audios: [
-                { title: "禮貌接待", url: "Day 1/audio1.mp3" }
+                { title: "禮貌接待", url: "audio1.mp3" }
             ],
             pdfs: [
-                { text: "A1.診所營業項目及資訊", url: "Day 1/A1.診所營業項目及資訊.pdf" },
-                { text: "A2-2.加班申請單", url: "Day 1/A2-2.加班申請單(範本)1061120修改.pdf" },
-                { text: "A3.電話轉接SOP", url: "Day 1/A3.電話轉接SOP.pdf" },
-                { text: "A4.客訴發生SOP", url: "Day 1/A4.客訴發生SOP.pdf" },
-                { text: "A6.IC單填寫SOP", url: "Day 1/A6.IC單填寫SOP  113.9.11修改 .pdf" },
-                { text: "A9.診所位置平面圖", url: "Day 1/A9.診所位置平面圖.jpg" },
-                { text: "A12 新進人員sop", url: "Day 1/A12 新進人員sop.pdf" },
-                { text: "A12 新進人員sop", url: "Day 1/A14.優勢系統ic讀卡機當機.pdf" },
-                { text: "A14.優勢系統ic讀卡機當機", url: "Day 1/A18 AED使用方式及流程.pdf" },
-                { text: "A24 停水應急SOP", url: "Day 1/A24 停水應急SOP.pdf" },
+                { text: "A1.診所營業項目及資訊", url: "A1.診所營業項目及資訊.pdf" },
+                { text: "A2-2.加班申請單", url: "A2-2.加班申請單(範本)1061120修改.pdf" },
+                { text: "A3.電話轉接SOP", url: "A3.電話轉接SOP.pdf" },
+                { text: "A4.客訴發生SOP", url: "A4.客訴發生SOP.pdf" },
+                { text: "A6.IC單填寫SOP", url: "A6.IC單填寫SOP  113.9.11修改 .pdf" },
+                { text: "A9.診所位置平面圖", url: "A9.診所位置平面圖.jpg" },
+                { text: "A12 新進人員sop", url: "A12 新進人員sop.pdf" },
+                { text: "A12 新進人員sop", url: "A14.優勢系統ic讀卡機當機.pdf" },
+                { text: "A14.優勢系統ic讀卡機當機", url: "A18 AED使用方式及流程.pdf" },
+                { text: "A24 停水應急SOP", url: "A24 停水應急SOP.pdf" },
     
     
             ],
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             text: "認識F4表、如何開啟備診語音、如何使用以上工具、學習如何基礎備診。",
             additionalText:"每個診間都有 F4 表，請務必確認並使用。此外，還有語音備診網站，其相關資訊已在「正職」及「兼職」群組的記事本與公告中發布，請隨時參考。進行備診時，請務必打開相關資料，按照網站或表單上的內容逐項檢查並備好，確保準備無誤。",
             pdfs: [
-                { text: "認識F4表", url: "Day 2/F4表.pdf" },
+                { text: "認識F4表", url: "F4表.pdf" },
             ],
             links:[
             {text:"語音備診網站", url:"https://inumagic.github.io/voice-assistant/"}
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         3:{
             text:"患者Q&A",
             pdfs:[
-                { text: "與患者問與答", url: "Day 1/與患者問與答_1040121.pdf" },
+                { text: "與患者問與答", url: "與患者問與答_1040121.pdf" },
     
             ],
         },
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "CT 教育訓練 - Part 4", url: "https://youtu.be/Yw2PRXimFSg?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
                 { text: "CT 教育訓練 - Part 5", url: "https://youtu.be/7YIvLfwIREM?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
                 { text: "CT 教育訓練 - Part 6", url: "https://youtu.be/_BRh_cDRxJI?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
-                { text: "CT 教育訓練 - Part 7", url: "Day 1/CT7.mp4" },
+                { text: "CT 教育訓練 - Part 7", url: "CT7.mp4" },
             ],
            
         },
@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
             pdfs:[
                 { text: "帶P't進診間流程SOP", url: "5.臨床類(MNOP)/M.GP/M1.帶P't進診間流程SOP.pdf" },
              
-                { text: "A10.拍攝照片影片SOP", url: "Day 1/A10.拍攝照片影片SOP.pdf" },
-                { text: "P2.矯正口內外照教學", url: "Day 2/P2.矯正口內外照教學 part II.pdf" },
+                { text: "A10.拍攝照片影片SOP", url: "A10.拍攝照片影片SOP.pdf" },
+                { text: "P2.矯正口內外照教學", url: "P2.矯正口內外照教學 part II.pdf" },
             ],
         },
     
@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
         7:{
         text:"IC相關",
         pdfs:[
-            { text: "A6.IC單填寫SOP", url: "Day 1/A6.IC單填寫SOP  113.9.11修改 .pdf" },
-            { text: "A8-1.健保處置代碼KEY IN SOP", url: "Day 1/A8-1.健保處置代碼KEY IN SOP (技工不必看!!).pdf" },
-            { text: "A14.優勢系統ic讀卡機當機", url: "Day 1/A14.優勢系統ic讀卡機當機.pdf" },
-            { text: "A26特殊疾病患者標準SOP", url: "Day 1/A26特殊疾病患者標準SOP.pdf" },
+            { text: "A6.IC單填寫SOP", url: "A6.IC單填寫SOP  113.9.11修改 .pdf" },
+            { text: "A8-1.健保處置代碼KEY IN SOP", url: "A8-1.健保處置代碼KEY IN SOP (技工不必看!!).pdf" },
+            { text: "A14.優勢系統ic讀卡機當機", url: "A14.優勢系統ic讀卡機當機.pdf" },
+            { text: "A26特殊疾病患者標準SOP", url: "A26特殊疾病患者標準SOP.pdf" },
         ],
         },
     
