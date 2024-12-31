@@ -23,12 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "A12 新進人員sop", url: "A14.優勢系統ic讀卡機當機.pdf" },
                 { text: "A14.優勢系統ic讀卡機當機", url: "A18 AED使用方式及流程.pdf" },
                 { text: "A24 停水應急SOP", url: "A24 停水應急SOP.pdf" },
-    
-    
-            ],
-           
-            
-            links:[
                 {text:"教育訓練群組", url:"https://line.me/R/ti/g/Xy_DlB9_SQ"},
                 {text:"X光教育訓練群組", url:"https://line.me/R/ti/g/UrjXAr2nJe"},
     
