@@ -215,7 +215,6 @@ function loadDayContent(day) {
     }
 
     
-
     // 添加主要內容
     const mainContainer = document.createElement("main");
     mainContainer.className = "container my-4";
@@ -265,59 +264,11 @@ function loadDayContent(day) {
         mainContainer.appendChild(linksSection);
     }
 
-    // 添加小測驗部分
-    const quizSection = document.createElement("div");
-    quizSection.className = "day-quiz mt-5";
-    quizSection.innerHTML = `
-        <h3>每日小考</h3>
-        <div class="quiz-container">
-            <div class="quiz-header">
-                <h1>Check Your Knowledge</h1>
-            </div>
-            <div class="question">
-                <h5>What should you do before answering a phone call?</h5>
-                <input type="text" class="form-control" placeholder="Enter your answer here">
-            </div>
-            <button class="btn btn-primary mt-3">Submit Answer</button>
-        </div>
-    `;
-    mainContainer.appendChild(quizSection);
-
     // 添加主內容到 dayContent
     dayContent.appendChild(mainContainer);
 
     // 顯示 Day 頁面
     showSection(dayContentSection);
-}
-
-// 創建多媒體部分
-function createMediaSection(title, items, type) {
-    const section = document.createElement("div");
-    const header = document.createElement("h3");
-    header.textContent = title;
-    section.appendChild(header);
-
-    items.forEach((item) => {
-        if (type === "audio") {
-            const audioElement = document.createElement("audio");
-            audioElement.controls = true;
-            audioElement.src = item.url;
-
-            const audioTitle = document.createElement("p");
-            audioTitle.textContent = item.title;
-            section.appendChild(audioTitle);
-            section.appendChild(audioElement);
-        } else if (type === "link") {
-            const linkElement = document.createElement("a");
-            linkElement.href = item.url;
-            linkElement.textContent = item.text;
-            linkElement.target = "_blank";
-            section.appendChild(linkElement);
-            section.appendChild(document.createElement("br"));
-        }
-    });
-
-    return section;
 }
 
 // 綁定主頁按鈕事件
