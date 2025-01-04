@@ -231,7 +231,7 @@ function loadDayContent(day) {
     const activitiesSection = document.createElement("div");
     activitiesSection.className = "day-content";
     activitiesSection.innerHTML = `
-        <h2 class="day-title">Today's Activities</h2>
+        <h2 class="day-title">今日學習主要內容</h2>
         <p class="day-text">${dayData.text || "No activities for today."}</p>
     `;
     mainContainer.appendChild(activitiesSection);
@@ -241,7 +241,7 @@ function loadDayContent(day) {
         const resourcesSection = document.createElement("div");
         resourcesSection.className = "day-resources mt-4";
         resourcesSection.innerHTML = `
-            <h3>Resources</h3>
+            <h3>內容</h3>
             <ul class="list-group"></ul>
         `;
         const resourcesList = resourcesSection.querySelector("ul");
@@ -259,7 +259,7 @@ function loadDayContent(day) {
         const linksSection = document.createElement("div");
         linksSection.className = "day-links mt-4";
         linksSection.innerHTML = `
-            <h3>Important Links</h3>
+            <h3>連結</h3>
             <ul class="list-group"></ul>
         `;
         const linksList = linksSection.querySelector("ul");
@@ -276,7 +276,7 @@ function loadDayContent(day) {
     const quizSection = document.createElement("div");
     quizSection.className = "day-quiz mt-5";
     quizSection.innerHTML = `
-        <h3>Quiz</h3>
+        <h3>每日小考</h3>
         <div class="quiz-container">
             <div class="quiz-header">
                 <h1>Check Your Knowledge</h1>
