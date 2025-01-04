@@ -214,14 +214,7 @@ function loadDayContent(day) {
         return;
     }
 
-    // 添加標題
-    const header = document.createElement("header");
-    header.className = "bg-primary text-white text-center py-3";
-    header.innerHTML = `
-        <img src="logo.png" alt="Logo" class="mb-2">
-        <h1>Day ${day} - Learning and Tasks</h1>
-    `;
-    dayContent.appendChild(header);
+    
 
     // 添加主要內容
     const mainContainer = document.createElement("main");
