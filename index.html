@@ -56,20 +56,55 @@
             <div id="daily-buttons" class="row g-3"></div>
         </div>
 
+
+
         <!-- Day Content Section -->
         <div id="day-content-section" class="d-none">
             <button id="back-to-daily-buttons" class="btn btn-secondary mb-3">Back to Days</button>
             <div id="day-content"></div>
         </div>
-         <div class="col-12 col-md-4">
-            <div class="card shadow-sm">
-                <img src="quiz.jpg" class="card-img-top" alt="考題">
-                <div class="card-body text-center">
-                    <h5 class="card-title">考題練習</h5>
-                    <a href="quiz.html" class="btn btn-success">開始測驗</a>
-                </div>
-            </div>
+        <!-- Day Content Section -->
+        <div class="day-container" class="d-none">
+            <div class="day-container d-none">
+                <header class="bg-primary text-white text-center py-3">
+                    <img src="logo.png" alt="Logo">
+                    <h1 id="day-header-title">Day - Learning and Tasks</h1>
+                </header>
+                <main class="container my-4">
+                    <div class="day-content">
+                        <h2 class="day-title">今日主要內容</h2>
+                        <p class="day-text" id="day-description"></p>
+            
+                        <div class="day-resources mt-4">
+                            <h3>內容</h3>
+                            <ul class="list-group" id="day-resources"></ul>
+                        </div>
+            
+                        <div class="day-links mt-4">
+                            <h3>連結</h3>
+                            <ul class="list-group" id="day-links"></ul>
+                        </div>
+            
+                        <div class="day-quiz mt-5">
+                            <h3>每日小考</h3>
+                            <div class="quiz-container">
+                                <div class="quiz-header">
+                                    <h1>Check Your Knowledge</h1>
+                                </div>
+                                <div class="question">
+                                    <h5>What should you do before answering a phone call?</h5>
+                                    <input type="text" class="form-control" placeholder="Enter your answer here">
+                                </div>
+                                <button class="btn-submit">繳交答案</button>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+            <footer>
+                <p>&copy; 2024 Dental Training Program</p>
+            </footer>
         </div>
+        
     </main>
     <footer >
         <p>&copy; 2024 Dental Training Program</p>

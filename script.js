@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "CT 教育訓練 - Part 4", url: "https://youtu.be/Yw2PRXimFSg?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
                 { text: "CT 教育訓練 - Part 5", url: "https://youtu.be/7YIvLfwIREM?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
                 { text: "CT 教育訓練 - Part 6", url: "https://youtu.be/_BRh_cDRxJI?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
-                { text: "CT 教育訓練 - Part 7", url: "CT7.mp4" },
+                { text: "CT 教育訓練 - Part 7", url: "https://youtu.be/nW_cCcJp3-s?list=PLnpTiTa0d_zQKjpSFe0z84yRILK3wyEfq" },
             ],
            
         },
@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "R9.約診注意事項", url: "R9.pdf" },
                 { text: "R11.櫃台每日工作事項", url: "R11.pdf" },
                 { text: "U1.健保抽審程序", url: "U1.pdf" },
+                { text: "有患者來電植牙或導航儀費用等相關問題該如何回復", url: "I.mp3" },
 
 
 
@@ -170,65 +171,33 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
    // 顯示特定區段
    function showSection(section) {
-    [homeSection, dailyButtonsSection, dayContentSection].forEach(s => s.classList.add("d-none"));
+    [homeSection, dailyButtonsSection, dayContentSection].forEach((s) =>
+        s.classList.add("d-none")
+    );
     section.classList.remove("d-none");
 }
 
 // 加載日數圖片
 function loadDailyImages(range) {
     const [start, end] = range.split("-").map(Number);
-    dailyButtons.innerHTML = ""; // 清空内容
+    dailyButtons.innerHTML = ""; // 清空內容
 
     for (let i = start; i <= end; i++) {
         const col = document.createElement("div");
-        col.className = "col-12 col-md-4 text-center"; // 居中对齐
+        col.className = "col-12 col-md-4 text-center";
 
         const img = document.createElement("img");
-        img.src = `day${i}.jpg`; // 指定图片路径
+        img.src = `day${i}.jpg`; // 指定圖片路徑
         img.alt = `Day ${i}`;
         img.className = "img-fluid cursor-pointer";
         img.addEventListener("click", () => loadDayContent(i));
 
-        const label = document.createElement("p"); // 添加 Day 标注
+        const label = document.createElement("p");
         label.textContent = `Day ${i}`;
-        label.className = "mt-2"; // 添加一些间距
+        label.className = "mt-2";
 
         col.appendChild(img);
-        col.appendChild(label); // 把标注加入到图片下面
-        dailyButtons.appendChild(col);
-    }
-
-    showSection(dailyButtonsSection);
-}
-
-
-// 顯示特定區段
-function showSection(section) {
-    [homeSection, dailyButtonsSection, dayContentSection].forEach(s => s.classList.add("d-none"));
-    section.classList.remove("d-none");
-}
-
-// 加載日數圖片
-function loadDailyImages(range) {
-    const [start, end] = range.split("-").map(Number);
-    dailyButtons.innerHTML = ""; // 清空内容
-
-    for (let i = start; i <= end; i++) {
-        const col = document.createElement("div");
-        col.className = "col-12 col-md-4 text-center"; // 居中对齐
-
-        const img = document.createElement("img");
-        img.src = `day${i}.jpg`; // 指定图片路径
-        img.alt = `Day ${i}`;
-        img.className = "img-fluid cursor-pointer";
-        img.addEventListener("click", () => loadDayContent(i));
-
-        const label = document.createElement("p"); // 添加 Day 标注
-        label.textContent = `Day ${i}`;
-        label.className = "mt-2"; // 添加一些间距
-
-        col.appendChild(img);
-        col.appendChild(label); // 把标注加入到图片下面
+        col.appendChild(label);
         dailyButtons.appendChild(col);
     }
 
@@ -246,52 +215,96 @@ function loadDayContent(day) {
     }
 
     // 添加標題
-    const title = document.createElement("h2");
-    title.textContent = `Day ${day}`;
-    dayContent.appendChild(title);
+    const header = document.createElement("header");
+    header.className = "bg-primary text-white text-center py-3";
+    header.innerHTML = `
+        <img src="logo.png" alt="Logo" class="mb-2">
+        <h1>Day ${day} - Learning and Tasks</h1>
+    `;
+    dayContent.appendChild(header);
 
-    // 添加文本內容
-    if (dayData.text) {
-        const text = document.createElement("p");
-        text.textContent = dayData.text;
-        dayContent.appendChild(text);
+    // 添加主要內容
+    const mainContainer = document.createElement("main");
+    mainContainer.className = "container my-4";
+
+    // Today's Activities
+    const activitiesSection = document.createElement("div");
+    activitiesSection.className = "day-content";
+    activitiesSection.innerHTML = `
+        <h2 class="day-title">Today's Activities</h2>
+        <p class="day-text">${dayData.text || "No activities for today."}</p>
+    `;
+    mainContainer.appendChild(activitiesSection);
+
+    // 添加資源部分
+    if (dayData.pdfs && dayData.pdfs.length > 0) {
+        const resourcesSection = document.createElement("div");
+        resourcesSection.className = "day-resources mt-4";
+        resourcesSection.innerHTML = `
+            <h3>Resources</h3>
+            <ul class="list-group"></ul>
+        `;
+        const resourcesList = resourcesSection.querySelector("ul");
+        dayData.pdfs.forEach((pdf) => {
+            const listItem = document.createElement("li");
+            listItem.className = "list-group-item";
+            listItem.innerHTML = `<a href="${pdf.url}" target="_blank">${pdf.text}</a>`;
+            resourcesList.appendChild(listItem);
+        });
+        mainContainer.appendChild(resourcesSection);
     }
 
-    // 添加音頻
-    if (dayData.audios) {
-        const audioSection = createMediaSection("Audio Files", dayData.audios, "audio");
-        dayContent.appendChild(audioSection);
+    // 添加重要連結部分
+    if (dayData.links && dayData.links.length > 0) {
+        const linksSection = document.createElement("div");
+        linksSection.className = "day-links mt-4";
+        linksSection.innerHTML = `
+            <h3>Important Links</h3>
+            <ul class="list-group"></ul>
+        `;
+        const linksList = linksSection.querySelector("ul");
+        dayData.links.forEach((link) => {
+            const listItem = document.createElement("li");
+            listItem.className = "list-group-item";
+            listItem.innerHTML = `<a href="${link.url}" target="_blank">${link.text}</a>`;
+            linksList.appendChild(listItem);
+        });
+        mainContainer.appendChild(linksSection);
     }
 
-    // 添加 PDF 連結
-    if (dayData.pdfs) {
-        const pdfSection = createMediaSection("PDF Resources", dayData.pdfs, "link");
-        dayContent.appendChild(pdfSection);
-    }
+    // 添加小測驗部分
+    const quizSection = document.createElement("div");
+    quizSection.className = "day-quiz mt-5";
+    quizSection.innerHTML = `
+        <h3>Quiz</h3>
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h1>Check Your Knowledge</h1>
+            </div>
+            <div class="question">
+                <h5>What should you do before answering a phone call?</h5>
+                <input type="text" class="form-control" placeholder="Enter your answer here">
+            </div>
+            <button class="btn btn-primary mt-3">Submit Answer</button>
+        </div>
+    `;
+    mainContainer.appendChild(quizSection);
 
-    // 添加外部連結
-    if (dayData.links) {
-        const linksSection = createMediaSection("Related Links", dayData.links, "link");
-        dayContent.appendChild(linksSection);
-    }
+    // 添加主內容到 dayContent
+    dayContent.appendChild(mainContainer);
 
-    // 添加視頻
-    if (dayData.videos) {
-        const videoSection = createMediaSection("Video Resources", dayData.videos, "video");
-        dayContent.appendChild(videoSection);
-    }
-
+    // 顯示 Day 頁面
     showSection(dayContentSection);
 }
 
-// 創建多媒體區段
+// 創建多媒體部分
 function createMediaSection(title, items, type) {
     const section = document.createElement("div");
     const header = document.createElement("h3");
     header.textContent = title;
     section.appendChild(header);
 
-    items.forEach(item => {
+    items.forEach((item) => {
         if (type === "audio") {
             const audioElement = document.createElement("audio");
             audioElement.controls = true;
@@ -308,16 +321,6 @@ function createMediaSection(title, items, type) {
             linkElement.target = "_blank";
             section.appendChild(linkElement);
             section.appendChild(document.createElement("br"));
-        } else if (type === "video") {
-            const videoElement = document.createElement("video");
-            videoElement.controls = true;
-            videoElement.src = item.url;
-            videoElement.style.maxWidth = "100%"; // 视频自适应大小
-
-            const videoTitle = document.createElement("p");
-            videoTitle.textContent = item.text;
-            section.appendChild(videoTitle);
-            section.appendChild(videoElement);
         }
     });
 
@@ -325,7 +328,7 @@ function createMediaSection(title, items, type) {
 }
 
 // 綁定主頁按鈕事件
-document.querySelectorAll(".range-button").forEach(button => {
+document.querySelectorAll(".range-button").forEach((button) => {
     button.addEventListener("click", () => {
         const range = button.getAttribute("data-range");
         loadDailyImages(range);

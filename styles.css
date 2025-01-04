@@ -84,3 +84,148 @@ footer{
 footer p{
     color: white;
 }
+.quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.quiz-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.quiz-header h1 {
+    color: #0d6efd;
+    font-weight: bold;
+}
+.question {
+    margin-top: 20px;
+}
+.question h5 {
+    color: #333;
+}
+.btn-submit {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: #0d6efd;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn-submit:hover {
+    background: #0056b3;
+}
+/* 標題和背景 */
+.day-container header {
+    background-color: #3d0566;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #f1f1f1;
+}
+.day-container header img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+.day-container header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* 主內容區域 */
+.day-content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.day-title {
+    color: #3d0566;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.day-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* 資源列表 */
+.day-resources, .day-links {
+    margin-top: 20px;
+}
+.day-resources h3, .day-links h3 {
+    font-size: 1.5rem;
+    color: #3d0566;
+    margin-bottom: 10px;
+}
+.list-group-item {
+    font-size: 1rem;
+    color: #333;
+}
+.list-group-item a {
+    text-decoration: none;
+    color: #0d6efd;
+    transition: color 0.3s;
+}
+.list-group-item a:hover {
+    color: #0056b3;
+}
+
+/* 測驗區域 */
+.quiz-container {
+    max-width: 100%;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quiz-header h1 {
+    color: #3d0566;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.question h5 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.btn-submit {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: #3d0566;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn-submit:hover {
+    background: #290346;
+}
+
+/* 全局樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+footer {
+    background-color: #3d0566;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+}
