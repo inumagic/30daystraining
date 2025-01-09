@@ -264,6 +264,33 @@ function loadDayContent(day) {
         mainContainer.appendChild(linksSection);
     }
 
+// 添加音訊部分
+if (dayData.audios && dayData.audios.length > 0) {
+    const audiosSection = document.createElement("div");
+    audiosSection.className = "day-audios mt-4";
+    audiosSection.innerHTML = `
+        <h3>音訊</h3>
+        <ul class="list-group"></ul>
+    `;
+    const audiosList = audiosSection.querySelector("ul");
+    dayData.audios.forEach((audio) => {
+        const listItem = document.createElement("li");
+        listItem.className = "list-group-item";
+        listItem.innerHTML = `
+            <div>
+                <strong>${audio.title}</strong>
+                <audio controls>
+                    <source src="${audio.url}" type="audio/mpeg">
+                    您的瀏覽器不支援音訊播放。
+                </audio>
+            </div>
+        `;
+        audiosList.appendChild(listItem);
+    });
+    mainContainer.appendChild(audiosSection);
+}
+
+
     // 添加主內容到 dayContent
     dayContent.appendChild(mainContainer);
 
