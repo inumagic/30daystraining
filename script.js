@@ -45,12 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     
         3:{
-            text:"患者Q&A",
+            text:"患者Q&A及診間備品",
             pdfs:[
                 { text: "與患者問與答", url: "ptqa.pdf" },
+                { text: "診間備品SOP", url: "d3sop.pdf" },
+
     
             ],
+
+
         },
+    
     
         4:{
             text:"X光教學",
