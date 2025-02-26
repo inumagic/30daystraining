@@ -1,21 +1,44 @@
-/* 橫槓樣式 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    margin-top: 20px;
+}
+/* 罘��罔ｅ� */
 .bg-primary {
-    background-color: #3d0566 !important; /* 使用紫色背景 */
-    color: white; /* 保持文字為白色 */
+    background-color: #3d0566 !important; /* 篏睡��勧�画���� */
+    color: white; /* 篆�����絖��榊�処�� */
 }
 
-/* 調整 logo 的樣式 */
+/* 茯炊�� logo ��罔ｅ� */
 .bg-primary img {
-    height: 40px; /* 設定 logo 高度 */
+    height: 40px; /* 荐㊤� logo 蕭�綺� */
     display: block;
-    margin: 0 auto; /* 居中對齊 */
+    margin: 0 auto; /* 絮�筝㊤�藹� */
 }
 
-/* 標題文字樣式 */
+/* 罔�蕁���絖�罔ｅ� */
 .bg-primary h1 {
-    font-size: 1.5rem; /* 標題文字大小 */
-    margin: 10px 0 0; /* 與 logo 保持間距 */
-    text-align: center; /* 文字居中 */
+    font-size: 1.5rem; /* 罔�蕁���絖�紊у� */
+    margin: 10px 0 0; /* �� logo 篆�����莊� */
+    text-align: center; /* ��絖�絮�筝� */
 }
 
 body h1{
@@ -26,36 +49,36 @@ body h1{
 }
 
 .card-cover {
-    background-size: cover; /* 背景圖片適配 */
-    background-position: center; /* 背景居中 */
-    height: 400px; /* 默認高度 */
+    background-size: cover; /* ������������ */
+    background-position: center; /* �����筝� */
+    height: 400px; /* 藥�茯�蕭�綺� */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* 讓內容向下對齊 */
+    justify-content: flex-end; /* 莅��у���筝�絨�藹� */
     padding: 20px;
     border-radius: 10px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 增加文字可讀性 */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 紜�����絖������ */
 }
 
 button.range-button {
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.8); /* 按鈕半透明背景 */
+    background-color: rgba(0, 0, 0, 0.8); /* ������������� */
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-start; /* 讓按鈕靠左對齊 */
+    align-self: flex-start; /* 顒�������綏��藹� */
     font-size: 16px;
 }
 
 button.range-button:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* 按鈕懸停效果 */
+    background-color: rgba(0, 0, 0, 0.9); /* �����後������ */
 }
 
 @media (max-width: 992px) {
     .card-cover {
-        height: 300px; /* 平板設備高度減小 */
+        height: 300px; /* 綛恰�粋┃��蕭�綺��絨� */
     }
     button.range-button {
         font-size: 14px;
@@ -65,10 +88,10 @@ button.range-button:hover {
 
 @media (max-width: 576px) {
     .card-cover {
-        height: 200px; /* 手機設備高度最小 */
+        height: 200px; /* ��罘�荐㊤��蕭�綺���絨� */
     }
     h2 {
-        font-size: 18px; /* 標題字體縮小 */
+        font-size: 18px; /* 罔�蕁�絖�蕭�膰�� */
     }
     button.range-button {
         font-size: 12px;
@@ -120,7 +143,7 @@ footer p{
 .btn-submit:hover {
     background: #0056b3;
 }
-/* 標題和背景 */
+/* 罔�蕁������� */
 .day-container header {
     background-color: #3d0566;
     color: white;
@@ -137,7 +160,7 @@ footer p{
     font-weight: bold;
 }
 
-/* 主內容區域 */
+/* 筝糸�у����� */
 .day-content {
     background: #fff;
     border-radius: 10px;
@@ -155,7 +178,7 @@ footer p{
     color: #333;
 }
 
-/* 資源列表 */
+/* 莖�羣���茵� */
 .day-resources, .day-links {
     margin-top: 20px;
 }
@@ -177,7 +200,7 @@ footer p{
     color: #0056b3;
 }
 
-/* 測驗區域 */
+/* 羝������ */
 .quiz-container {
     max-width: 100%;
     margin-top: 20px;
@@ -214,7 +237,7 @@ footer p{
     background: #290346;
 }
 
-/* 全局樣式 */
+/* ���罔ｅ� */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -228,4 +251,9 @@ footer {
 }
 footer p {
     margin: 0;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: #3d0566;
 }

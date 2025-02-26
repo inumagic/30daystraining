@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 - Day 12</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .content-section {
+            display: none; /* 預設隱藏 */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #3d0566; padding: 10px;">
+        <img src="logo-white2.png" alt="Logo" style="height: 60px;">
+    </div>
+
+    <div class="container mt-4 text-center">
+        <h1>Day 9 - Day 12</h1>
+        <div class="list-group">
+            <button class="list-group-item list-group-item-action" onclick="showSection('day9')">Day 9: 櫃台SOP-收費相關</button>
+            <button class="list-group-item list-group-item-action" onclick="showSection('day10')">Day 10: 叫貨</button>
+            <button class="list-group-item list-group-item-action" onclick="showSection('day11')">Day 11: 預設訊息</button>
+            <button class="list-group-item list-group-item-action" onclick="showSection('day12')">Day 12: 診間相關</button>
+        </div>
+
+        <!-- Day 1 內容 -->
+        <div id="day9" class="content-section">
+            <h1>Day 9: 櫃台SOP-收費相關</h1>
+            <h3>S4.TA印花收據SOP</h3><iframe  src="S4.pdf"></iframe>
+            <h3>S5.重新開立收據</h3><iframe  src="S5.pdf"></iframe>
+            <h3>S6.本票填寫SOP</h3><iframe  src="S6.pdf"></iframe>
+            <h3>S10-1.日報表寫法SOP</h3><iframe  src="S10-1.pdf"></iframe>
+            <h3>S11.患者申請X光影像等資料SOP</h3><iframe  src="S11.pdf"></iframe>
+            <h3>S12.櫃台收款流程SOP</h3><iframe  src="S12.pdf"></iframe>
+            <h3>S13.重開健保收據SOP</h3><iframe  src="S13.pdf"></iframe>
+            <h3>S14.M5單書寫方式SOP</h3><iframe  src="S14.M5.pdf"></iframe>
+        </div>
+
+        <!-- Day 2 內容 <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <audio controls>
+                <source src="audio2.mp3" type="audio/mpeg">
+                你的瀏覽器不支援音訊播放。
+            </audio>
+            <iframe src="https://drive.google.com/file/d/YOUR_PDF_ID/preview" width="600" height="800"></iframe>
+                        <iframe src="https://drive.google.com/file/d/YOUR_PDF_ID/preview" width="600" height="800"></iframe>
+-->
+        <div id="day10" class="content-section">
+            <h2>Day 10: 叫貨</h2>
+            <h3>V1.叫貨&收貨SOP</h3><iframe  src="V1.pdf"></iframe>
+            <h3>V2.叫貨單範本</h3><iframe  src="V2.pdf"></iframe>
+            <h3>V3.庫存SOP</h3><iframe  src="V3.pdf"></iframe>
+            <h3>V5. 維修流程&送修流程廠商SOP</h3><iframe  src="V5.pdf"></iframe>
+           
+        </div>
+
+        <!-- Day 3 內容 -->
+        <div id="day11" class="content-section">
+            <h2>Day 11: 預設訊息</h2>
+            <button>
+                <a href="https://inumagic.github.io/default-messages/">
+            <h3>口腔掃描系統教學</h3>
+                </a>
+            </button>
+
+        </div>
+
+        <!-- Day 4 內容 -->
+        <div id="day12" class="content-section">
+            <h2>Day 12: 診間相關</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ETqgEqPsrxo" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WR0dGxT2hWs" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZiMHNiORs4Y" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8ze-3H3vd6s" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dAgis79gKUw" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8hFc83l1vII" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NvYWY7r3lxg" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6njNwKoYk2M" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dVb93sU5zFg" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dPzhcp_hC2c" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CwA0ggFoKvg" frameborder="0" allowfullscreen></iframe>
+            <audio controls>
+                <source src="I.mp3" type="audio/mpeg">
+                你的瀏覽器不支援音訊播放。
+            </audio>
+           
+        </div>
+    </div>
+
+    <script>
+        function showSection(dayId) {
+            // 先隱藏所有 section
+            let sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // 顯示點選的 section
+            document.getElementById(dayId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
